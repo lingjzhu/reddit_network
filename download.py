@@ -93,19 +93,30 @@ if __name__ == "__main__":
     
     sum_dir = './summaries'    
     if not os.path.exists(sum_dir):
-        os.mkdir(sum_dir)
+        os.makedirs(sum_dir)
     
     if not os.path.exists(args.data_dir):
-        os.mkdir(sum_dir)
+        os.mkdir(args.data_dir)
+        
+    if not os.path.exists(args.out_dir):
+        os.mkdir(args.out_dir)
+
+    subreddits = ['apple','baseball','beer','boardgames','cars','FinalFantasy',
+                  'Guitar','harrypotter','hockey','Liverpool','Patriots','pcgaming',
+                  'photography','poker','reddevils','running','StarWars','subaru','pokemon']
     
-    subreddits = ['Cornell','Cornell']
+    
     for i in subreddits:
-        sub_out_dir = os.path.join(args.out_dir,i)
         
-        if not os.path.exists(sub_out_dir):
-            os.mkdir(sub_out_dir)
-        Download_data(i,args.data_dir,sub_out_dir,sum_dir)
-        
+        try:
+            sub_out_dir = os.path.join(args.out_dir,i)
+            
+            if not os.path.exists(sub_out_dir):
+                os.mkdir(sub_out_dir)
+            Download_data(i,args.data_dir,sub_out_dir,sum_dir)
+        except Exception as e:
+            print(e)
+            print(i)
         
         
         
