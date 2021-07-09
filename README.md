@@ -2,7 +2,7 @@
 Published in NAACL-HLT 2021 [(Link)](https://aclanthology.org/2021.naacl-main.178/). 
 
 
-Instruction for replication will come soon.
+
 
 You can cite this article as
 ```
