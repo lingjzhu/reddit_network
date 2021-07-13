@@ -18,7 +18,7 @@ Published in NAACL-HLT 2021 [(Link)](https://aclanthology.org/2021.naacl-main.17
   - Get all users and vocabulary -> *get_words_users_map.py*
   - Intra-community graph construction -> *graph_map.py*
   - Inter-community graph contruction -> *intercomm_graph.py*
-  - Generating random baseline graphs -> *randomgraph_baseline.py×
+  - Generating random baseline graphs -> *randomgraph_baseline.py*
   - Extract graph features -> *graph_stats.py*
   - Poisson regression -> *poisson_preprocessing.py* and *poisson_pred_pca.py*
   - Survival analysis -> *survival_processing.py* and *survival_analysisi_pca.py*
