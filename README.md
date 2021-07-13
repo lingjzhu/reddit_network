@@ -2,7 +2,9 @@
 Published in NAACL-HLT 2021 [(Link)](https://aclanthology.org/2021.naacl-main.178/). 
 
 
-
+### Data
+  - List of subreddits: samples.csv
+  - Neologisms: neologisms.csv
 
 You can cite this article as
 ```
