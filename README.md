@@ -10,7 +10,7 @@ Published in NAACL-HLT 2021 [(Link)](https://aclanthology.org/2021.naacl-main.17
   - The raw data is around 2TB;
   - The generated graph data are around 300GB;
   - The generated user and vocabulary lists, and immediate data may take up a few hundred GBs;
-  - We use 8~10 cores to parallelize the computation. For example, extracting all graphs may take more than a week using a single core but can be completed in less than 2 days;
+  - We use 8~10 cores and 120 GB of memory to parallelize many of the computations. For example, extracting all graphs may take more than a week using a single core but can be completed in less than 2 days using 8 cores;
   - It should take less than two weeks to complete all the computation in our case. 
 
 ### Steps
