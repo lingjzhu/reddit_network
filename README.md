@@ -6,6 +6,23 @@ Published in NAACL-HLT 2021 [(Link)](https://aclanthology.org/2021.naacl-main.17
   - List of subreddits: samples.csv
   - Neologisms: neologisms.csv
 
+### Hardware
+  - The raw data is around 2TB;
+  - The generated graph data are around 300GB;
+  - The generated user and vocabulary lists, and immediate data may take up a few hundred GBs;
+  - We use 8~10 cores to parallelize the computation. For example, extracting all graphs may take more than a week using a single core but can be completed in less than 2 days;
+  - It should take less than two weeks to complete all the computation in our case. 
+
+### Steps
+  - Download data -> download_map.py
+  - Get all users and vocabulary -> get_words_users_map.py
+  - Intra-community graph construction -> graph_map.py
+  - Inter-community graph contruction -> intercomm_graph.py
+  - Generating random baseline graphs -> randomgraph_baseline.py
+  - Extract graph features -> graph_stats.py
+  - Poisson regression -> poisson_preprocessing.py and poisson_pred_pca.py
+  - Survival analysis -> survival_processing.py and survival_analysisi_pca.py
+
 You can cite this article as
 ```
 @inproceedings{zhu-jurgens-2021-structure,
